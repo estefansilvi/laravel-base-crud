@@ -9,9 +9,12 @@
     <body>
 
         <div id="root">
-            <h1 style="text-align: center; padding: 10px 0">Crea la tua nuova birra</h1>
+            <h1 style="text-align: center; padding: 10px 0">Inserisci la tua birra</h1>
 
-            <form>
+            <form action="{{route('beers.store')}}" method="post">
+                @csrf
+                @method('POST')
+
                 @include('components.input', [
                     'id'=>'name',
                     'label'=>'Name',
@@ -67,11 +70,6 @@
                     'placeholder'=>'inserire url della immagine'
                 ])
 
-
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
         </div>

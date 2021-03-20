@@ -36,7 +36,18 @@ class BeerController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'name' => 'required',
+            'cover' => 'required'
+        ]);
+        $data = $request->all();
 
+        $beerNew = new Beer();
+        $beerNew->fill($data);
+ 	    $beerNew->save();
+
+        $beerStored = Beer::orderBy('id','desc')->first();
+        return redirect()->route('beers.show',['beer'=>$beerStored]);
     }
 
     /**

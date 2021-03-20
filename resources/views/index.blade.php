@@ -10,7 +10,7 @@
 
         <div id="root">
             <h1 style="text-align: center; padding: 10px 0">Beers Table</h1>
-
+            <a href="{{route('beers.create')}}">Crea nuova birra</a>
               <table class="table">
                 <thead class="thead-light">
                   <tr>
@@ -28,7 +28,7 @@
                     @foreach ($beers as $beer )
                     <tr>
                         <th scope="row">{{$beer->id}}</th>
-                        <td>{{$beer->name}}</td>
+                        <td><a href="{{route('beers.show',['beer'=>$beer])}}">{{$beer->name}}</a></td>
                         <td>{{$beer->description}}</td>
                         <td>{{$beer->gradation}}</td>
                         <td>{{$beer->color}}</td>
