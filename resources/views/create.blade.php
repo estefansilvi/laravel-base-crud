@@ -25,7 +25,7 @@
                     'id'=>'description',
                     'label'=>'Description',
                     'type'=>'text',
-                    'name'=>'name',
+                    'name'=>'description',
                     'aria'=>'nameHelp',
                     'placeholder'=>'descrizione birra'
                 ])
@@ -34,7 +34,7 @@
                     'id'=>'gradation',
                     'label'=>'Gradation',
                     'type'=>'text',
-                    'name'=>'name',
+                    'name'=>'gradation',
                     'aria'=>'nameHelp',
                     'placeholder'=>'gradazione della birra'
                 ])
@@ -43,7 +43,7 @@
                     'id'=>'color',
                     'label'=>'Color',
                     'type'=>'text',
-                    'name'=>'name',
+                    'name'=>'color',
                     'aria'=>'nameHelp',
                     'placeholder'=>'colore birra'
                 ])
@@ -53,7 +53,7 @@
                     'id'=>'price',
                     'label'=>'Price',
                     'type'=>'text',
-                    'name'=>'name',
+                    'name'=>'price',
                     'aria'=>'nameHelp',
                     'placeholder'=>'prezzo della birra'
                 ])
@@ -62,7 +62,7 @@
                     'id'=>'cover',
                     'label'=>'Cover',
                     'type'=>'text',
-                    'name'=>'name',
+                    'name'=>'cover',
                     'aria'=>'nameHelp',
                     'placeholder'=>'inserire url della immagine'
                 ])

@@ -10002,3 +10002,18 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.form-group {
+  padding: 15px;
+}
+.form-group .form-control {
+  width: 1000px;
+}
+
+body {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+body .card-img-top {
+  padding: 15px;
+}

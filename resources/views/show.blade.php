@@ -8,15 +8,15 @@
     </head>
     <body>
 
-        <div id="show-root">
-            <img src="{{$beer->cover}}" alt="">
-
-            <div class="description">
-                <h1>{{$beer->name}}</h1>
-                <div><b>Descrizione: </b>{{$beer->description}}</div>
-                <div><b>Gradazione alcolica: </b>{{$beer->gradation}}</div>
-                <div><b>Colore: </b>{{$beer->color}}</div>
-                <div><b>Prezzo: </b>{{$beer->price}}</div>
+        <div class="product-container">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{$beer->cover}}" alt="">
+                <div class="card-body">
+                <h5 class="card-title">{{$beer->name}}</h5>
+                <p class="card-text">{{$beer->description}}</p>
+                <a href="/beers" class="btn btn-primary">Return</a>
+                <a href="{{route('beers.create')}}" class="btn btn-primary">Add</a>
+                </div>
             </div>
 
         </div>
